@@ -79,4 +79,4 @@ function createPriceSummary(price, discountPercent, taxPercent) {
 
 ## Source
 
-Project specification from roadmap.sh: Price Calculator.
+Project specification from [roadmap.sh: Price Calculator](https://roadmap.sh/projects/js-price-calculator).
