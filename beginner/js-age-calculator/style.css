@@ -1,0 +1,142 @@
+:root {
+  --primary-blue: #4a90e2;
+  --dark-blue: #2c3e50;
+  --soft-blue-bg: #f4f8fb;
+  --error-red: #e74c3c;
+  --white: #ffffff;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", -apple-system, sans-serif;
+  background-color: var(--soft-blue-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.app-title {
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.app-title span {
+  color: var(--primary-blue);
+}
+
+#calculatorCard {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #777;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.calculate-btn {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.calculate-btn:hover {
+  background: #357abd;
+}
+
+#resultArea {
+  margin-top: 2rem;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-text {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.age-number {
+  font-weight: 800;
+  color: var(--primary-blue);
+  font-size: 1.4rem;
+}
+
+.error-message {
+  background: #fff5f5;
+  color: var(--error-red);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-left: 4px solid var(--error-red);
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .input-row {
+    flex-direction: column;
+  }
+}
