@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restricted Textarea</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-container">
+      <div class="input-wrapper">
+        <label for="messageInput" class="input-label">Your Message</label>
+        <textarea
+          id="messageInput"
+          class="text-area"
+          placeholder="Share your thoughts..."
+          maxlength="200"
+        ></textarea>
+
+        <div class="counter-footer">
+          <span id="charCounter">0</span> / <span id="maxLimit">200</span>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
