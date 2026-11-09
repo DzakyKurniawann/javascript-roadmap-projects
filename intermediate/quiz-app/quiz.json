@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What is the correct syntax for declaring a constant in JS?",
+    "options": [
+      "var myConst",
+      "let myConst",
+      "const myConst",
+      "constant myConst"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "Which method is used to add an element at the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correct": 0
+  },
+  {
+    "question": "Who created JavaScript in 1995?",
+    "options": ["Bill Gates", "Brendan Eich", "Steve Jobs", "Mark Zuckerberg"],
+    "correct": 1
+  },
+  {
+    "question": "Why do we use 'use strict' in JavaScript?",
+    "options": [
+      "To make code faster",
+      "To enable strict mode",
+      "To import modules",
+      "To skip errors"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "How do you check the type of a variable?",
+    "options": ["type()", "typeof", "isType", "instanceof"],
+    "correct": 1
+  }
+]
